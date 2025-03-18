@@ -1,0 +1,38 @@
+/* static/admin/css/custom_admin.css */
+.dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 22%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.big-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #447e9b;
+}
+
+.model-resume .field-get_skills_count {
+    font-weight: bold;
+}
+
+.model-jobmatch .field-match_score {
+    font-weight: bold;
+}
+
+/* Highlight high match scores */
+tr.model-jobmatch td.field-match_score:nth-child(3) {
+    background-color: rgba(40, 167, 69, 0.2);
+}
+
+.field-match_score[data-value="90.0"]:after {
+    content: " 🌟";
+}
